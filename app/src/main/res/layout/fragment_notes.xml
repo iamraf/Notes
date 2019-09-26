@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#FFF"
+        tools:context=".ui.notes.NotesFragment">
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/f_notes_recycler"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingStart="4dp"
+            android:paddingEnd="4dp"/>
+
+        <TextView
+            android:id="@+id/f_notes_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_gravity="center"
+            android:fontFamily="sans-serif-light"
+            android:text="You have no saved notes yet."
+            android:textAlignment="center"
+            android:visibility="gone"/>
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/f_notes_fab"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|end"
+            android:layout_margin="16dp"
+            app:backgroundTint="#FFF"
+            app:borderWidth="0dp"
+            android:src="@drawable/ic_add_black_24dp" />
+
+    </FrameLayout>
+</layout>

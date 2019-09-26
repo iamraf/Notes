@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+        <variable
+            name="note"
+            type="com.github.h01d.notes.data.local.database.entity.Note" />
+    </data>
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foreground="?android:attr/selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        app:cardCornerRadius="8dp"
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:id="@+id/i_note_linear"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingTop="4dp"
+            android:paddingBottom="4dp"
+            android:paddingStart="8dp"
+            android:paddingEnd="8dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/i_note_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="@{note.title}"
+                android:textColor="#000"
+                android:textSize="18sp" />
+
+            <TextView
+                android:id="@+id/i_note_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:fontFamily="sans-serif-light"
+                android:text="@{note.text}"
+                android:textSize="16sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-thin"
+                android:textColor="#000"
+                android:textSize="12sp"
+                app:date="@{note.created}" />
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+</layout>

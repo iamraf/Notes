@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="colors">
+        <item name="red_200">@color/red_200</item>
+        <item name="green_200">@color/green_200</item>
+        <item name="indigo_200">@color/indigo_200</item>
+        <item name="orange_200">@color/orange_200</item>
+        <item name="blue_200">@color/blue_200</item>
+        <item name="pink_200">@color/pink_200</item>
+        <item name="yellow_200">@color/yellow_200</item>
+        <item name="cyan_200">@color/cyan_200</item>
+        <item name="lightgreen_200">@color/lightgreen_200</item>
+        <item name="brown_200">@color/brown_200</item>
+    </array>
+</resources>
